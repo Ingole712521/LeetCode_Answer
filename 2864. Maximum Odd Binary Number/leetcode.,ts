@@ -1,0 +1,10 @@
+function maximumOddBinaryNumber(binaryString: string): string {
+     let onesCount = 0;
+
+     for(const character of binaryString) {
+         onesCount += character ==='1' ? 1 : 0;
+
+     }
+     return '1'.repeat(onesCount - 1) + '0'.repeat(binaryString.length - onesCount ) + '1';
+
+}
